@@ -1,0 +1,299 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	background: #ebebeb;
+
+}
+
+h1, h2, h3, h4, h5, h6  {
+	font-family: 'Oswald', Arial, Sans-serif;
+	font-weight: normal;
+	color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: #BB1F35;
+	font-weight: bold;
+
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;	
+	margin: auto;
+	
+}
+
+.izquierda {
+	float: left;
+}
+
+.derecha {
+	float: right;
+} 
+
+/*-----Header---------*/
+header {
+	color: #fff;
+	margin-bottom: 30px;
+	background: #BB1F35;
+}
+
+header .contenedor {
+	overflow: hidden;
+}
+
+header .logo {
+	max-width: 300px;
+	position: relative;
+	margin-top: 3%;
+}
+
+header .logo a{
+	color: #fff;
+	font-family: "Oswald", Arial, Sans-serif;
+	font-size: 35px;
+	line-height: 30px;
+}
+
+header .logo a:hover{
+	text-decoration: none;
+}
+
+header .buscar{
+	display: inline-block;
+	position: relative;
+	right: 30px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+}
+
+header .buscar input[type="text"]{
+	background: none;
+	border: 1px solid rgba(255,255,255,.7);
+	color: rgba(255,255,255,.7);
+	height: 30px;
+	padding: 0px 10px;
+	padding-right: 30px;
+}
+
+header .buscar input[type="text"]:hover,
+header .buscar input[type="text"]:focus {
+	background: none;
+	color: #fff;
+	border: 1px solid #fff;	
+}
+
+header .buscar .icono {
+	color: rgba(255,255,255,.7);
+	position: absolute;
+	right: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 6px;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+header .buscar .icono:hover {
+	color: #000;
+}
+
+header .menu {
+	display: inline-block;
+	min-width: 200px;
+}
+
+header .menu ul {
+	list-style: none;
+}
+
+header .menu ul li {
+	display: inline-block;
+	float: left;
+    margin-top: 10%;
+}
+
+header .menu ul li a {
+	color: #fff;
+	display: inline-block;
+	padding: 0px 20px;
+	font-weight: bold;
+}
+
+header .menu ul li a:hover {
+	color: #fff;
+	display: block;
+	padding: 0px 20px;
+	font-weight: bold;
+}
+
+header .menu ul li i {
+	margin-left: 15px;
+}
+
+.post {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .3);
+	margin-bottom: 50px;
+	overflow: hidden;
+	height: auto;
+	background: rgb(250, 251, 250);
+}
+
+article {
+	display: block;
+	padding: 25px 25px;
+	overflow: hidden;
+}
+
+article .titulo  {
+    color: black;
+    font-weight: bold;
+    font-style: "Oswald", Arial, Sans-serif;
+    font-size: 30px;
+      
+}
+
+article .fecha {
+	font-style: "Open Sans", Arial, Sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);  
+    font-weight: bold;
+}
+
+article .thumb {
+	width: 100%;
+	min-height: 200px;
+    max-height: 200px;
+    margin: 15px 0px;
+	overflow: hidden;
+	position: relative;
+}
+article .thumb img {
+    background-image: contain;
+    position: absolute;
+    top: -90px;  
+}
+
+article .extracto {
+    font-style: "Open Sans", Arial, Sans-serif;
+    font-size: 14px;
+    color: black;  
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+article .continuar {
+	font-style: "Open Sans", Arial, Sans-serif;
+    font-size: 15px;
+    padding-top: 10px;    
+}
+
+.paginacion ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	/*text-align: center;
+	max-height: 50px;*/
+}
+
+.paginacion ul li {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	margin: 10px;
+	background: #595959;
+	color: #fff;
+	border-radius: 5px 5px;
+	text-align: center;
+
+}
+
+.paginacion ul li a {
+	/*display: block;
+	text-align: center;*/
+	background: #595959;
+	color: #fff;
+		
+}
+
+.paginacion ul .active {
+	background: #BB1F35;
+	
+}
+
+.paginacion ul .disabled {
+	background: #A8A8A8;
+	cursor: not-allowed;	
+}
+
+.paginacion ul .disabled:hover {
+	background: #A8A8A8;
+}
+
+footer {
+	font-family: "Osward", Arial, Sans-serif;
+	font-size: 15px;
+	color: #fff;
+	background: #BB1F35;
+	max-width: 250px;
+}
+
+
+.formulario {
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"] {
+	display: block;
+	padding: 18px 18px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	width: 90%;
+}
+
+.formulario textarea{
+	display: block;
+	padding: 18px 18px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	width: 90%;
+	min-height: 300px;
+}
+.formulario input[type="submit"] {
+	padding: 15px 15px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-right: 50px;
+	float: right;
+	background: rgba(70, 70, 70, .7);
+	color: #fff;
+}
+
+a.btn {
+	padding-right: 10px;
+	margin-bottom: 5px;
+}
+
+
+
+
